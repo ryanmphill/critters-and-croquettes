@@ -5,6 +5,7 @@ class AngelFish:
     def __init__(self, name, species, food):
         self.name = name
         self.species = species
+        self.food = food
         self.date_added = date.today()
         self.swimming = True
     

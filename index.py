@@ -13,5 +13,6 @@ miss_fuzz = Llama("Miss Fuzz", "domestic llama", "midday", "oats")
 print(miss_fuzz)
 miss_fuzz.feed()
 
-mr_worm = KingSnake("Mr. Worm", "common kingsnake")
-print(mr_worm.__dict__)
+mr_worm = KingSnake("Mr. Worm", "common kingsnake", "mice")
+print(mr_worm)
+mr_worm.feed()
