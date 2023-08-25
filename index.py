@@ -1,16 +1,17 @@
 # import the python datetime module to help us create a timestamp
 from datetime import date
-from animals.walking import (Llama, Goat, Echidna, Donkey, Alpaca)
-from animals.slithering import (Anaconda, Copperhead, CornSnake, KingSnake, RatSnake)
-from animals.swimming import (AngelFish, ClownFish, Eel, MantaRay, Salamander)
+from animals import (Llama, Goat, Echidna, Donkey, Alpaca)
+from animals import (Anaconda, Copperhead, CornSnake, KingSnake, RatSnake)
+from animals import (AngelFish, ClownFish, Eel, MantaRay, Salamander)
+from animals import (Goose)
 from attractions import (PettingZoo, Wetlands, SnakePit)
 
 # self.swimming = True - These animals are in the tank
 # self.slithering = True - These animals are in the pond
 # self.walking = True - These animals are in the petting area
-varmint_village = PettingZoo("Varmint Village")
-slither_inn = SnakePit("Slither Inn")
-blue_cave_cove = Wetlands("Blue Cave Cove")
+varmint_village = PettingZoo("Varmint Village", "cute and fuzzy critters to cuddle")
+slither_inn = SnakePit("Slither Inn", "stupendous snakes of all sizes")
+blue_cave_cove = Wetlands("Blue Cave Cove", "aquatic critters of all kinds")
 
 
 miss_fuzz = Llama("Miss Fuzz", "domestic llama", "midday", "oats", 1111111)
@@ -50,3 +51,9 @@ miss_fuzz.feed()
 mr_worm.feed()
 mr_manta.feed()
 miss_gills.feed()
+
+bob = Goose("Bob", "Canada goose", "watercress sandwiches", 135791)
+bob.run()
+bob.swim()
+varmint_village.add_animal(bob)
+varmint_village.report()
