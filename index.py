@@ -18,8 +18,8 @@ alpi = Alpaca("Alpi", "Eastern Alpaca", "morning", "straw")
 # print(miss_fuzz)
 # miss_fuzz.feed()
 
-mr_worm = KingSnake("Mr. Worm", "common kingsnake", "mice")
-copper = Copperhead("Copper", "Eastern Copperhead", "eggs")
+mr_worm = KingSnake("Mr. Worm", "common kingsnake", "mice", 5555555)
+copper = Copperhead("Copper", "Eastern Copperhead", "eggs", 9999999)
 # print(mr_worm)
 # mr_worm.feed()
 
@@ -37,3 +37,7 @@ slither_inn.report()
 blue_cave_cove.add_animal(miss_gills)
 blue_cave_cove.add_animal(mr_manta)
 blue_cave_cove.report()
+
+print("1st chip num",mr_worm.chip_num)
+mr_worm.chip_num = 123456
+print("2nd chip num",mr_worm.chip_num)
