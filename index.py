@@ -41,3 +41,7 @@ blue_cave_cove.report()
 print("1st chip num",mr_worm.chip_num)
 mr_worm.chip_num = 123456
 print("2nd chip num",mr_worm.chip_num)
+
+print(slither_inn.last_critter_added)
+print(varmint_village.last_critter_added)
+print(blue_cave_cove.last_critter_added)

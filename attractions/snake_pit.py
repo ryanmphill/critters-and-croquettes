@@ -5,6 +5,11 @@ class SnakePit:
         self.description = "stupendous snakes of all sizes"
         self.animals = list()
     
+    @property
+    def last_critter_added(self):
+        newest_critter = self.animals[-1]
+        return f'{newest_critter.name} the {newest_critter.species} is the most recent addition to {self.attraction_name}'
+    
     def add_animal(self, animal):
         self.animals.append(animal)
     
