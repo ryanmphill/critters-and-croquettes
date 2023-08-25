@@ -47,3 +47,6 @@ print(varmint_village.last_critter_added)
 print(blue_cave_cove.last_critter_added)
 
 miss_fuzz.feed()
+mr_worm.feed()
+mr_manta.feed()
+miss_gills.feed()
