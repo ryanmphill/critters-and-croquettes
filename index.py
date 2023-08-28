@@ -57,3 +57,16 @@ bob.run()
 bob.swim()
 varmint_village.add_animal(bob)
 varmint_village.report()
+
+print("*-----------------------------------------------------------------*")
+
+dolly = Llama("Dolly", "miniature llama", "morning", "hay", 1033)
+snappy = Eel("Snappy", "Moray Eel", "fish", 1044)
+corny = CornSnake("Corny", "Eastern Cornsnake", "eggs", 999922)
+
+varmint_village.add_animal(dolly)
+slither_inn.add_animal(corny)
+blue_cave_cove.add_animal(snappy)
+slither_inn.add_animal(dolly)
+blue_cave_cove.add_animal(dolly)
+varmint_village.add_animal(snappy)
